@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Superhero Entry Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkred;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"], textarea {
+            background-color: #333;
+            color: white;
+            border: 1px solid darkred;
+            padding: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: darkred;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1 align="center">Add a New Superhero</h1>
+    <hr>
+    <form method="get" action="thank.html">
+        Enter Name: <input type="text" id="name" name="name" required><br><br>
+
+        Select Universe:<br>
+        <input type="radio" id="dc" name="universe" value="DC" required>DC
+        <input type="radio" id="marvel" name="universe" value="Marvel" required>Marvel<br><br>
+
+        Superhero Name: <input type="text" id="superhero_name" name="superhero_name" required><br><br>
+
+        Description: <textarea id="description" name="description" rows="4" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
